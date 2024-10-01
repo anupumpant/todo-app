@@ -7,11 +7,9 @@ import { Todousecontext } from "./context/Todousecontext.js";
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-const { todos, dispatch } = Todousecontext();
-
 root.render(
   <StrictMode>
-    <TodoContextProvider values={{ todos, dispatch }}>
+    <TodoContextProvider>
       <App />
     </TodoContextProvider>
   </StrictMode>

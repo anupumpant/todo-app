@@ -13,7 +13,11 @@ const Todoinput = () => {
           settodoitem(e.target.value);
         }}
       ></input>
-      <button onClick={dispatch({ type: "ADD_TODO", payload: todoitem })}>
+      <button
+        onClick={() => {
+          dispatch({ type: "ADD_TODO", payload: todoitem });
+        }}
+      >
         +
       </button>
     </div>

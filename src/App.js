@@ -1,10 +1,13 @@
 import "./styles.css";
+import Todoinput from "./components/Todoinput.js";
+import Todocard from "./components/Todocard.js";
+import Todolist from "./components/Todolist.js";
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello! CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <Todoinput />
+      <Todolist />
     </div>
   );
 }
